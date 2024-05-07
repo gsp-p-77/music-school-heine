@@ -1,4 +1,71 @@
+
+html, body{
+  height: 100%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch; 
+  background-color: #FFF7D4; 
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  text-align: center;
+  padding: 5vmin;
+  flex: 1 0 auto;
+}
+
+/* 
+Main Color palette
+https://colorhunt.co/palette/9bb8cdfff7d4eec759b1c381
+
+Button: #B1C381
+Nav-bar and other backgrounds: #9BB8CD
+Body: #FFF7D4
+Footer: #EEC759
+
+*/
 .navbar-custom
 {
-    background-color: #A34343;
+    background-color: #9BB8CD;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #EEC759;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.custom-carousel {
+  height: 400px; /* Adjust the height as per your requirement */
+  background-color: #B1C3817f;
+}
+
+.carousel-item img {
+  padding-top: 2em;
+  height: auto;
+  width: 35%;  
+}
+
+.container
+{
+  display: flex;
+  flex-direction: column;
+  gap:5em;
+}
+
+.custom-icon
+{
+  height: 20px;
+  width: auto;
 }
