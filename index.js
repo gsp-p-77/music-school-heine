@@ -1,13 +1,18 @@
+import env from "dotenv";
 import express from "express";
 
 const app = express();
 
-const PORT = process.env.PORT || 3001;
+env.config();
 
+
+const SCHOOL_NAME = process.env.SCHOOL_NAME;
+const LOCAL_HOST_PORT = process.env.LOCAL_HOST_PORT;
+const PORT = process.env.PORT || LOCAL_HOST_PORT;
 
 app.use(express.static("public"));
-app.get("/", (req, res) => {
-  res.render("index.ejs");
+app.get("/", (req, res) => {  
+  res.render("index.ejs", { musicSchoolName: SCHOOL_NAME});
 });
 
 app.get("/about", (req, res) => {

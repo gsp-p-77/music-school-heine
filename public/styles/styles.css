@@ -1,31 +1,62 @@
 
+@font-face {
+  font-family: 'Aptos';
+  src: url('/assets/fonts/aptos.ttf') format('truetype');  
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body{
   height: 100%;  
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+  color: white;
 }
 
+#Logo1
+{
+  width: 50vw;
+}
 
+#Instagram-Button
+{
+  color:white;
+}
+
+.customize-bootstrap-defaults
+{
+  color:white;
+
+}
+.page-headline
+{  
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  margin: 2em;
+}
 footer
 {
-  background-color: khaki;
+  background-color: #404040;
 }
 
 header,
 footer {
   flex: 0 0 auto;  
-  font-style: normal;  
+  font-style: normal; 
+  color: white;
+  font-family: 'Aptos', sans-serif;   
 }
 
 header
-{
+{  
   flex: 0 0 auto;
   font-weight: 600;  
   position: fixed;
   width: 100%;
   top: 0%;
-  z-index: 1;  
+  z-index: 1;
+  background-color: #404040;
 }
 
 main {
@@ -34,6 +65,7 @@ main {
   padding: 1vmin;
   flex: 1 0 auto;
   display: flex;
+  background-color: #595959;
 }
 
 /* 
@@ -48,8 +80,14 @@ Footer: #EEC759
 */
 
 .navbar
-{  
-  background-color: khaki;  
+{    
+  background-color: #404040;  
+  color: white;   
+}
+
+.navbar-nav
+{      
+  color: white;   
 }
 
 .footer {
