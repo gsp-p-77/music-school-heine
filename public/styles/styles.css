@@ -6,18 +6,52 @@
   font-style: normal;
 }
 
-html, body{
-  height: 100%;  
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  color: white;
+body
+{
+  color:white;
+  font-family: 'Aptos', sans-serif;
+  font-style: normal;
   background-color: #404040;
+  font-size: 0.75rem;
+  width: 100%;   
+}
+
+header
+{    
+  font-weight: 600;    
+  width: 100%;
+  top: 0%;  
+  display: block;
+  background-color: #404040;
+}
+
+p
+{
+  margin-bottom:0.75rem;
+}
+.page-headline
+{    
+  font-size: 0.75rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin:1em;
+}
+
+#page-headline-logo
+{
+  flex-grow: 1.5;  
+}
+#page-headline-info
+{
+  flex-grow: 1;
+  text-align: right;
 }
 
 #Logo1
 {
-  width: 25vw;
+  width: 20rem;
 }
 
 #Instagram-Button
@@ -30,45 +64,18 @@ html, body{
   color:white;
 
 }
-.page-headline
-{  
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin: 1em;
-  font-size: small;
-  column-gap: 50vw;
-}
-footer
-{
+
+
+main {  
+  text-align: left;  
+  display: block;  
   background-color: #404040;
 }
 
-header,
-footer {
-  flex: 0 0 auto;  
-  font-style: normal; 
-  color: white;
-  font-family: 'Aptos', sans-serif;   
-}
 
-header
-{  
-  flex: 0 0 auto;
-  font-weight: 600;  
-  position: fixed;
-  width: 100%;
-  top: 0%;
-  z-index: 1;
-  background-color: #404040;
-}
 
-main {
-  margin-top: 11rem;
-  text-align: left;
-  padding: 1vmin;
-  display: block;
-  background-color: #404040;
-}
+
+
 
 /* 
 Main Color palette
@@ -81,10 +88,14 @@ Footer: #EEC759
 
 */
 
+
 .navbar
 {    
-  background-color: #595959;  
-  color: white;   
+  background-color: #595959;
+  width: 100%;  
+  color: white;
+  --bs-navbar-brand-font-size: 0.75rem;
+  --bs-navbar-padding-y: 0.75rem;
 }
 
 .navbar-nav
@@ -114,35 +125,43 @@ Footer: #EEC759
   height: 200px;  
 }
 
-.logo-container
+.main-logo-container
 {
   text-align: center;
-  background-image: url('/assets/images/lesson_image.png');
+  background-image: url('/assets/images/guitar-background-grey.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   
 }
-#logo-headline
+#main-logo-headline
 {
-  height: 25vh;
+  width:50%;
   
 }
 
-.intro-container
+.main-intro-container
 {
   margin-top: 2em;
   padding: 1rem;
   background-color: #595959;
-  display: grid;
-  grid-template-columns: 1fr 3fr;  
-  text-align: left;
-  gap: 2em;
+  display: flex;
+  flex-direction: row;  
+  flex-wrap:wrap;  
+  text-align: left;  
   height: fit-content;
   width: 100%;
+  gap: 0.75rem;
 }
-
+#main-intro-con-div1
+{
+  flex: 1;
+}
+#main-intro-con-div2
+{
+  flex: 3;
+}
 .container-headline
 {
   margin-top:1em;
@@ -154,24 +173,45 @@ Footer: #EEC759
 
 #Teacher1-photo
 {
-  height: 25vh;
+  width: 10rem;
 }
 
-.lessons-container
-{
-  margin-top: -1em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  padding-left: 5em;
-  padding-right: 5em;
-  background-color: #595959;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;  
-  text-align: left;
-  gap: 2em;
-  height: fit-content;
-  width: 100%;
+@media (width >= 700px) {
+  .lessons-container
+  {
+    margin-top: -1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 5em;
+    padding-right: 5em;
+    background-color: #595959;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    text-align: left;
+    gap: 2em;
+    height: fit-content;
+    width: 100%;
+  }
 }
+@media (width < 700px) {
+  .lessons-container
+  {
+    margin-top: -1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 5em;
+    padding-right: 5em;
+    background-color: #595959;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    text-align: left;
+    gap: 2em;
+    height: fit-content;
+    width: 100%;
+  }  
+}
+
 
 .lesson-image
 {
@@ -196,6 +236,10 @@ Footer: #EEC759
   flex: 5;
 }
 
+.btn
+{
+  --bs-btn-border-color:black;  
+}
 .btn-success
 {
   --bs-btn-bg:#aac527;
