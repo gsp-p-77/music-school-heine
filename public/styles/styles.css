@@ -144,7 +144,7 @@ Footer: #EEC759
 .main-intro-container
 {
   margin-top: 2em;
-  padding: 1rem;
+  padding: 1rem 10rem;
   background-color: #595959;
   display: flex;
   flex-direction: row;  
@@ -162,10 +162,19 @@ Footer: #EEC759
 {
   flex: 3;
 }
-.container-headline
+
+.main-text-headline
 {
   margin-top:1em;
-  padding: 1rem;
+  padding: 1rem 10rem;
+  background-color: #595959;
+  padding-bottom:1em;
+}
+
+.main-text-block
+{
+  margin-top:-1em;
+  padding: 1rem 10rem;
   background-color: #595959;
   padding-bottom:1em;
 }
@@ -180,10 +189,7 @@ Footer: #EEC759
   .lessons-container
   {
     margin-top: -1em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding: 1rem 10rem; 
     background-color: #595959;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
@@ -197,10 +203,7 @@ Footer: #EEC759
   .lessons-container
   {
     margin-top: -1em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding: 1rem 2rem;    
     background-color: #595959;
     display: flex;
     flex-direction: row;
@@ -209,7 +212,20 @@ Footer: #EEC759
     gap: 2em;
     height: fit-content;
     width: 100%;
-  }  
+  }
+  
+  .main-text-headline
+  {
+    padding: 1rem 2rem;
+  }
+  .main-text-block
+  {
+    padding: 1rem 2rem;
+  }
+  .main-intro-container
+  {
+  padding: 1rem 2rem;
+  }    
 }
 
 
