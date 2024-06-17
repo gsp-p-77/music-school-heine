@@ -1,18 +1,23 @@
 # music-school-web-side
-Generic web side for a music school (clone of one of my private repositories, in which I do the development for a customer as hobby project)
 
-## Usage
-### Development environment
+Web side for a music school, that I am developing privately for a friend (below mentioned as "customer")
+
+##  Development environment
 - Install vs code
 - install node.js (https://nodejs.org/en)
 - Open terminal
 - npm i
 - node index.js
 
-### Deployment
+## Intended release planning
+
 This page was developed for the Heroku cloud platform. Therefore it contains a Procfile.
 
-The server is ready for deployment on a Heroku server
+The Heruko deployment provides a CI/CD pipeline, so that any integrated changes can be reviewed via a known domain, which is shared with the customer:
+https://limitless-gorge-07193-1777a3683eda.herokuapp.com/
 
-Configuration to be done via .env file
+The customer plans to publish the web side on a public domain later, when the content is complete and final approval took place.
+
+
+
 
